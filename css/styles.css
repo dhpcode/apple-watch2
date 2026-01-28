@@ -89,6 +89,74 @@ select:-webkit-autofill:focus {
 	flex-grow: 1;
 }
 
+/* SITE-HEADER */
+
+.site-header {
+	padding: 30px 0;
+}
+.container {
+}
+.site-header__container {
+	display: flex;
+	align-items: center;
+}
+.site-header__logo {
+	margin-right: auto;
+}
+.logo {
+	display: flex;
+}
+
+.logo:hover {
+	opacity: 0.8;
+}
+
+.logo:active {
+	opacity: 0.6;
+}
+.site-header__logo-image {
+	display: block;
+	width: 35px;
+	height: 42px;
+}
+.sitenav {
+	margin-right: 40px;
+}
+.sitenav__list {
+	display: flex;
+	align-items: center;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.sitenav__item:not(:last-child) {
+	margin-right: 30px;
+}
+.sitenav__link {
+	display: block;
+  padding: 3px 0;
+  border-bottom: 3px solid transparent;
+	text-decoration: none;
+	color: #333;
+	font-size: 15px;
+  transition: border-color 0.3s ease;
+}
+
+.sitenav__link:hover {
+  border-color: #333;
+}
+
+/* SEARCH-FORM */
+
+.search__form {
+}
+.search-form__input {
+	padding-top: 6px;
+	padding-bottom: 6px;
+	border: 0;
+	border-bottom: 1px solid #000;
+}
+
 /* RETINA BACKGROUNDS */
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
 	only screen and (min--moz-device-pixel-ratio: 2),
