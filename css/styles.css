@@ -6,6 +6,8 @@
 	--primary: #ea625c;
 	--text-color: #333;
 	--font-family: Roboto, sans-serif;
+	--title-color: #000;
+	--background-color-button-hover: #c9514c;
 }
 
 html {
@@ -84,6 +86,29 @@ select:-webkit-autofill:focus {
 	margin-right: auto;
 }
 
+/* BUTTON */
+
+.button {
+	padding: 12px 35px;
+	text-transform: uppercase;
+	text-decoration: none;
+	border: none;
+	font-size: 18px;
+	font-weight: bold;
+	line-height: 1.5;
+	background-color: var(--primary);
+	color: #fff;
+	letter-spacing: 2px;
+}
+
+.button:hover {
+	background-color: var(--background-color-button-hover);
+}
+
+.button:active {
+	opacity: 0.8;
+}
+
 /* MAIN CONTENT */
 .main-content {
 	flex-grow: 1;
@@ -134,16 +159,16 @@ select:-webkit-autofill:focus {
 }
 .sitenav__link {
 	display: block;
-  padding: 3px 0;
-  border-bottom: 3px solid transparent;
+	padding: 3px 0;
+	border-bottom: 3px solid transparent;
 	text-decoration: none;
 	color: #333;
 	font-size: 15px;
-  transition: border-color 0.3s ease;
+	transition: border-color 0.3s ease;
 }
 
 .sitenav__link:hover {
-  border-color: #333;
+	border-color: #333;
 }
 
 /* SEARCH-FORM */
@@ -155,6 +180,33 @@ select:-webkit-autofill:focus {
 	padding-bottom: 6px;
 	border: 0;
 	border-bottom: 1px solid #000;
+}
+
+/* INTRO */
+
+.intro {
+	padding: 190px 0;
+	border-bottom: 2px solid #ddd;
+	background-image: url("../images/intro-apple-watch.jpg");
+	background-repeat: no-repeat;
+	background-position: left calc(50% + 550px) bottom;
+}
+
+.intro__content {
+	max-width: 490px;
+}
+.intro__heading {
+	margin: 0;
+	margin-bottom: 30px;
+	font-size: 50px;
+	line-height: 1.2;
+	color: var(--title-color);
+}
+.intro__text {
+	margin-top: 0;
+	margin-bottom: 30px;
+	border-left: 3px solid var(--text-color);
+	padding-left: 37px;
 }
 
 /* RETINA BACKGROUNDS */
