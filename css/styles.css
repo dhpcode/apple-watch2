@@ -234,8 +234,14 @@ select:-webkit-autofill:focus {
 	margin-bottom: 30px;
 	border-left: 3px solid var(--text-color);
 	padding-left: 37px;
+	color: var(--text-color);
 }
 
+.lead-cta__white {
+	--title-color: #fff;
+	--text-color: #fff;
+	border-color: #fff;
+}
 /* FEATURES */
 
 .features {
@@ -296,14 +302,20 @@ select:-webkit-autofill:focus {
 	object-fit: cover;
 }
 
+/* RUNNERS */
 
+.runners {
+	padding: 240px 0;
+	background-image: url("../images/footer-image.jpg");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	background-attachment: fixed;
+}
 
-
-
-
-
-
-
+.runners__lead-cta {
+	margin-left: auto;
+}
 
 /* RETINA BACKGROUNDS */
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
@@ -312,4 +324,7 @@ select:-webkit-autofill:focus {
 	only screen and (min-device-pixel-ratio: 2),
 	only screen and (min-resolution: 192dpi),
 	only screen and (min-resolution: 2dppx) {
+		.runners {
+			background-image: url('../images/footer-image@2x.jpg');
+		}
 }
