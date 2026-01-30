@@ -89,7 +89,10 @@ select:-webkit-autofill:focus {
 /* BUTTON */
 
 .button {
+	display: inline-block;
 	padding: 12px 35px;
+	min-width: 260px;
+	text-align: center;
 	text-transform: uppercase;
 	text-decoration: none;
 	border: none;
@@ -216,17 +219,17 @@ select:-webkit-autofill:focus {
 	background-position: left calc(50% + 550px) bottom;
 }
 
-.intro__content {
+.lead-cta {
 	max-width: 490px;
 }
-.intro__heading {
+.lead-cta__heading {
 	margin: 0;
 	margin-bottom: 30px;
 	font-size: 50px;
 	line-height: 1.2;
 	color: var(--title-color);
 }
-.intro__text {
+.lead-cta__text {
 	margin-top: 0;
 	margin-bottom: 30px;
 	border-left: 3px solid var(--text-color);
@@ -274,6 +277,33 @@ select:-webkit-autofill:focus {
 		32px 0 0 0#ddd;
 	margin-left: 0;
 }
+
+/* PROMO */
+
+.promo {
+	padding: 70px 0;
+}
+.promo__container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.promo__image {
+	display: block;
+	width: 400px;
+	height: 600px;
+	object-fit: cover;
+}
+
+
+
+
+
+
+
+
+
 
 /* RETINA BACKGROUNDS */
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
